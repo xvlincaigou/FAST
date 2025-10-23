@@ -1,0 +1,398 @@
+/* Component-specific styles */
+
+/* Glass morphism utility classes */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Cosmic button variations */
+.cosmic-button {
+  background: linear-gradient(45deg, var(--pulsar-blue), var(--cosmic-teal));
+  border: none;
+  padding: 12px 32px;
+  border-radius: 25px;
+  color: var(--galaxy-white);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.cosmic-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.4);
+}
+
+.cosmic-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.cosmic-button:hover::before {
+  left: 100%;
+}
+
+.cosmic-button.secondary {
+  background: linear-gradient(45deg, var(--burst-orange), var(--nebula-pink));
+}
+
+.cosmic-button.secondary:hover {
+  box-shadow: 0 10px 25px rgba(255, 107, 53, 0.4);
+}
+
+.cosmic-button.gold {
+  background: linear-gradient(45deg, var(--star-gold), var(--burst-orange));
+}
+
+.cosmic-button.gold:hover {
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Section headers */
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--star-gold), var(--pulsar-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--pulsar-blue), var(--star-gold));
+  border-radius: 2px;
+}
+
+/* Card layouts */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card-grid.compact {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-grid.wide {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* Interactive elements */
+.interactive-element {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.interactive-element:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.interactive-element:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+/* Loading states */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: var(--galaxy-white);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 212, 255, 0.3);
+  border-top: 3px solid var(--pulsar-blue);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* Status indicators */
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-indicator.active {
+  background: linear-gradient(45deg, var(--pulsar-blue), var(--cosmic-teal));
+  color: var(--cosmic-blue);
+}
+
+.status-indicator.inactive {
+  background: rgba(148, 163, 184, 0.2);
+  color: var(--galaxy-white);
+}
+
+.status-indicator.warning {
+  background: linear-gradient(45deg, var(--burst-orange), var(--nebula-pink));
+  color: var(--galaxy-white);
+}
+
+/* Data displays */
+.data-display {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.data-label {
+  font-size: 0.9rem;
+  color: var(--cosmic-gray);
+  font-weight: 500;
+}
+
+.data-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--pulsar-blue);
+}
+
+.data-unit {
+  font-size: 0.9rem;
+  color: var(--cosmic-gray);
+  margin-left: 0.3rem;
+}
+
+/* Progress indicators */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--pulsar-blue), var(--star-gold));
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+/* Notification styles */
+.notification {
+  position: fixed;
+  top: 100px;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: var(--galaxy-white);
+  font-weight: 600;
+  z-index: 1000;
+  transform: translateX(400px);
+  transition: transform 0.3s ease;
+}
+
+.notification.show {
+  transform: translateX(0);
+}
+
+.notification.success {
+  background: linear-gradient(45deg, var(--cosmic-teal), var(--pulsar-blue));
+}
+
+.notification.error {
+  background: linear-gradient(45deg, var(--burst-orange), var(--nebula-pink));
+}
+
+.notification.info {
+  background: linear-gradient(45deg, var(--star-gold), var(--pulsar-blue));
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .card-grid.compact,
+  .card-grid.wide {
+    grid-template-columns: 1fr;
+  }
+  
+  .cosmic-button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-title::after {
+    width: 60px;
+  }
+}
+
+/* Animation utilities */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  transform: scale(0.8);
+  opacity: 0;
+  animation: scaleIn 0.6s ease forwards;
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar for components */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--pulsar-blue) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--pulsar-blue), var(--star-gold));
+  border-radius: 3px;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(11, 20, 38, 0.95);
+  color: var(--galaxy-white);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: 1px solid var(--pulsar-blue);
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .glass-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: var(--galaxy-white);
+  }
+  
+  .cosmic-button {
+    border: 2px solid var(--galaxy-white);
+  }
+}
+
+/* Dark mode support (if needed for system preferences) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cosmic-blue: #0A1020;
+    --space-purple: #150A25;
+  }
+}
