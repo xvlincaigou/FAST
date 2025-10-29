@@ -34,7 +34,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/FAST">
       <div className="App">
         <CosmicBackground />
         <Header />
