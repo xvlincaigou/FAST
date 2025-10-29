@@ -19,7 +19,7 @@ const LatestDiscoveries = () => {
     {
       id: 2,
       title: '探测到纳赫兹引力波存在的关键证据',
-      date: '2023年3月',
+      date: '2023年6月',
       category: '引力波探测',
       description: '通过精确测量脉冲星计时阵列，FAST团队探测到了纳赫兹引力波存在的关键证据，为引力波天文学开辟了新窗口。',
       image: '/frb-burst-cosmic.png',
@@ -30,23 +30,23 @@ const LatestDiscoveries = () => {
     {
       id: 3,
       title: '首次在射电波段观测到黑洞"脉搏"',
-      date: '2022年12月',
+      date: '2023年7月',
       category: '黑洞研究',
       description: 'FAST首次在射电波段观测到黑洞的周期性信号，就像黑洞的"脉搏"一样，这一发现为理解黑洞物理提供了新的视角。',
       image: '/fast-technical-diagram.png',
       significance: '这一发现证实了黑洞周围存在复杂的物理过程，为黑洞物理学提供了重要观测约束',
       publishedIn: '《自然》杂志',
-      details: '观测到的信号周期约为几分钟，可能与黑洞吸积盘中的不稳定性或喷流进动有关。'
+      details: '观测到的黑洞“脉搏”周期约为0.2秒'
     },
     {
       id: 4,
       title: '构建世界最大中性氢星系样本',
-      date: '2022年8月',
+      date: '2023年12月',
       category: '星系巡天',
       description: '利用FAST的高灵敏度，天文学家构建了世界上最大的中性氢星系样本，包含数万个星系的中性氢观测数据。',
       image: '/milky-way-panorama.png',
       significance: '这一样本为研究星系形成和演化、暗物质分布等宇宙学重大问题提供了宝贵的观测数据',
-      publishedIn: '《科学》杂志',
+      publishedIn: '《中国科学：物理学 力学 天文学》',
       details: '该样本覆盖的天空范围是之前最大样本的10倍以上，探测到的星系距离远至50亿光年。'
     }
   ];

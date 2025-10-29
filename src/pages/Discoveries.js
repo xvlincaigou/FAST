@@ -12,8 +12,8 @@ const Discoveries = () => {
       {
         id: 1,
         name: 'PSR J1859-01',
-        period: 0.59,
-        distance: 4100,
+        period: 1.83,
+        distance: 16000,
         discoveryDate: '2017-08-22',
         significance: '中国天眼发现的首批脉冲星之一',
         ra: '18h59m',
@@ -24,14 +24,14 @@ const Discoveries = () => {
       {
         id: 2,
         name: 'PSR J1931-01',
-        period: 1.83,
-        distance: 16000,
+        period: 0.59,
+        distance: 4100,
         discoveryDate: '2017-08-25',
-        significance: '距离地球1.6万光年的遥远脉冲星',
-        ra: '19h31m',
-        dec: '-01°23\'',
-        flux: 0.08,
-        width: 5.1
+        significance: '距离地球4100光年的遥远脉冲星',
+        ra: '',
+        dec: '',
+        flux: '',
+        width: ''
       },
       {
         id: 3,

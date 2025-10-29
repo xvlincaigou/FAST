@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-import StarMap from '../components/StarMap';
 import FastFacts from '../components/FastFacts';
 import LatestDiscoveries from '../components/LatestDiscoveries';
 import '../styles/globals.css';
@@ -39,20 +38,6 @@ const Home = () => {
   return (
     <div className="home-page">
       <Hero />
-      
-      {/* Star Map Section */}
-      <section 
-        className="section star-map-section fade-in-up"
-        ref={(el) => (sectionsRef.current[0] = el)}
-      >
-        <div className="container">
-          <h2 className="section-title">星空观测模拟器</h2>
-          <p className="section-subtitle">
-            体验中国天眼的观测视角，探索宇宙深处的奥秘
-          </p>
-          <StarMap />
-        </div>
-      </section>
 
       {/* FAST Facts Section */}
       <section 

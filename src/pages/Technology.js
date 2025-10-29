@@ -481,7 +481,7 @@ const Technology = () => {
                     <div className="highlight-icon">🏆</div>
                     <div className="highlight-content">
                       <h4>世界最大口径</h4>
-                      <p>500米口径，比第二大的Arecibo望远镜大43%</p>
+                      <p>500米口径，比第二大的Arecibo望远镜64%</p>
                     </div>
                   </div>
                   <div className="highlight-item">

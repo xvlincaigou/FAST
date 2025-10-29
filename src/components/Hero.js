@@ -74,23 +74,12 @@ const Hero = () => {
             <Link to="/discoveries" className="cosmic-button hero-btn">
               开始探索
             </Link>
-            <button 
-              className="cosmic-button secondary hero-btn"
-              onClick={() => {
-                const starMapSection = document.querySelector('.star-map-section');
-                if (starMapSection) {
-                  starMapSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              星空观测
-            </button>
           </div>
         </div>
 
         <div className="hero-stats">
           <div className="stat-item">
-            <div className="stat-number">1000+</div>
+            <div className="stat-number">1152</div>
             <div className="stat-label">发现脉冲星</div>
           </div>
           <div className="stat-item">

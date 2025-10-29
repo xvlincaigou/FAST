@@ -34,10 +34,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'GitHub', icon: '🐙', href: '#' },
-    { name: '微博', icon: '📱', href: '#' },
-    { name: '微信', icon: '💬', href: '#' },
-    { name: '邮箱', icon: '📧', href: '#' }
+    { name: 'GitHub', icon: '🐙', href: 'https://github.com/xvlincaigou/FAST' },
+    { name: '微博', icon: '📱', href: 'https://www.weibo.com/u/6443805249?tabtype=album' },
+    { name: '邮箱', icon: '📧', href: 'mailto:l-xu22@mails.tsinghua.edu.cn' }
   ];
 
   return (

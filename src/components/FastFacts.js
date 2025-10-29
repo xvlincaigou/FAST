@@ -6,7 +6,7 @@ const FastFacts = () => {
 
   const facts = [
     {
-      number: 1000,
+      number: 1152,
       suffix: '+',
       label: '发现脉冲星',
       description: '超过同一时期国际其他望远镜发现总数的3倍',
@@ -16,7 +16,7 @@ const FastFacts = () => {
     {
       number: 500,
       suffix: '米',
-      label: '口径直径',
+      label: '口径直径（米）',
       description: '世界最大单口径球面射电望远镜',
       icon: '🔭',
       color: '#FFD700'
@@ -24,7 +24,7 @@ const FastFacts = () => {
     {
       number: 137,
       suffix: '亿光年',
-      label: '观测距离',
+      label: '观测距离（亿光年）',
       description: '可探测到接近宇宙边缘的微弱信号',
       icon: '🌌',
       color: '#FF6B35'
@@ -32,7 +32,7 @@ const FastFacts = () => {
     {
       number: 2.5,
       suffix: '倍',
-      label: '灵敏度领先',
+      label: '灵敏度领先（倍）',
       description: '比世界第二大的射电望远镜灵敏度高2.5倍',
       icon: '⚡',
       color: '#20B2AA'
@@ -40,7 +40,7 @@ const FastFacts = () => {
     {
       number: 5300,
       suffix: '+',
-      label: '年观测时长',
+      label: '年观测时长（小时）',
       description: '每年超过5300小时的稳定观测时间',
       icon: '⏱️',
       color: '#FF1493'
@@ -139,7 +139,7 @@ const FastFacts = () => {
             <div className="telescope-name">美国 Arecibo</div>
             <div className="telescope-spec">
               <div className="spec-bar" style={{ width: '70%', background: '#FFD700' }}>
-                350米口径
+                305米口径
               </div>
             </div>
           </div>
