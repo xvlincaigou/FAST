@@ -10,7 +10,7 @@ const VirtualTour = () => {
       id: 'overview',
       name: '全景概览',
       description: '从高处俯瞰FAST全貌',
-      image: '/hero-fast-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/hero-fast-cosmic.png`,
       hotspots: [
         {
           id: 'dish',
@@ -39,7 +39,7 @@ const VirtualTour = () => {
       id: 'control-room',
       name: '控制室',
       description: 'FAST的神经中枢',
-      image: '/fast-technical-diagram.png',
+      image: `${process.env.PUBLIC_URL}/fast-technical-diagram.png`,
       hotspots: [
         {
           id: 'monitors',
@@ -61,7 +61,7 @@ const VirtualTour = () => {
       id: 'feed-cabin',
       name: '馈源舱内部',
       description: '信号接收的核心区域',
-      image: '/pulsars-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/pulsars-cosmic.png`,
       hotspots: [
         {
           id: 'receivers',

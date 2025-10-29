@@ -10,7 +10,7 @@ const About = () => {
       title: '项目构想',
       description: '南仁东提出建设中国大型射电望远镜的构想',
       details: '在日本担任客座教授的南仁东毅然回国，决心建造一个属于中国的大型射电望远镜。',
-      image: '/hero-fast-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/hero-fast-cosmic.png`,
       significance: '这一构想为中国天文学的发展指明了方向'
     },
     {
@@ -18,7 +18,7 @@ const About = () => {
       title: '立项启动',
       description: 'FAST项目正式立项，开始可行性研究',
       details: '经过7年的前期研究，FAST项目获得国家批准，正式开始立项建设。',
-      image: '/fast-technical-diagram.png',
+      image: `${process.env.PUBLIC_URL}/fast-technical-diagram.png`,
       significance: '标志着中国大科学工程建设进入新阶段'
     },
     {
@@ -26,7 +26,7 @@ const About = () => {
       title: '开工建设',
       description: 'FAST在贵州平塘正式开工建设',
       details: '2011年3月，FAST工程在贵州省平塘县大窝凼洼地正式开工建设。',
-      image: '/milky-way-panorama.png',
+      image: `${process.env.PUBLIC_URL}/milky-way-panorama.png`,
       significance: '从概念设计转向工程实施的重要里程碑'
     },
     {
@@ -34,7 +34,7 @@ const About = () => {
       title: '落成启用',
       description: 'FAST正式落成启用，习近平总书记发来贺信',
       details: '2016年9月25日，FAST正式落成启用，成为世界上最大的单口径射电望远镜。',
-      image: '/pulsars-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/pulsars-cosmic.png`,
       significance: '中国在天文大科学装置领域实现重大突破'
     },
     {
@@ -42,7 +42,7 @@ const About = () => {
       title: '首次发现',
       description: 'FAST发现首批脉冲星，实现零的突破',
       details: '2017年10月，FAST宣布发现2颗新脉冲星，距离地球分别约4100光年和1.6万光年。',
-      image: '/frb-burst-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/frb-burst-cosmic.png`,
       significance: '中国射电望远镜首次发现脉冲星，具有重要的里程碑意义'
     },
     {
@@ -50,7 +50,7 @@ const About = () => {
       title: '通过国家验收',
       description: 'FAST顺利通过国家验收，正式开放运行',
       details: '2020年1月11日，FAST通过国家验收，各项指标达到或超过设计要求。',
-      image: '/fast-discoveries-timeline.png',
+      image: `${process.env.PUBLIC_URL}/fast-discoveries-timeline.png`,
       significance: '标志着FAST进入正式运行阶段'
     },
     {
@@ -58,7 +58,7 @@ const About = () => {
       title: '全球开放',
       description: 'FAST向全球科学界开放，促进国际合作',
       details: '2021年3月31日，FAST正式向全球科学家开放观测申请。',
-      image: '/hero-fast-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/hero-fast-cosmic.png`,
       significance: '体现了中国科学家的开放合作精神'
     },
     {
@@ -66,7 +66,7 @@ const About = () => {
       title: '成果丰硕',
       description: 'FAST取得系列重大科学发现',
       details: '截至2023年，FAST已发现超过1000颗脉冲星，在快速射电暴等领域取得重大突破。',
-      image: '/pulsars-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/pulsars-cosmic.png`,
       significance: 'FAST进入成果爆发期，为人类认识宇宙作出重要贡献'
     }
   ];
@@ -83,7 +83,7 @@ const About = () => {
         '带领团队克服重重技术困难',
         '为中国天文学发展作出卓越贡献'
       ],
-      image: '/hero-fast-cosmic.png'
+      image: `${process.env.PUBLIC_URL}/hero-fast-cosmic.png`
     },
     {
       name: '姜鹏',
@@ -96,7 +96,7 @@ const About = () => {
         '组织重大科学观测项目',
         '促进国际合作与交流'
       ],
-      image: '/fast-technical-diagram.png'
+      image: `${process.env.PUBLIC_URL}/fast-technical-diagram.png`
     }
   ];
 
@@ -159,7 +159,7 @@ const About = () => {
             </div>
           </div>
           <div className="overview-image">
-            <img src="/hero-fast-cosmic.png" alt="FAST全景" />
+            <img src={`${process.env.PUBLIC_URL}/hero-fast-cosmic.png`} alt="FAST全景" />
           </div>
         </div>
       </section>

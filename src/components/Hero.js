@@ -56,7 +56,7 @@ const Hero = () => {
   return (
     <section className="hero" ref={heroRef}>
       <div className="hero-background">
-        <div className="hero-image"></div>
+        <div className="hero-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/hero-fast-cosmic.png)`}}></div>
         <div className="hero-overlay"></div>
       </div>
       
@@ -123,7 +123,6 @@ const Hero = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: url('/hero-fast-cosmic.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;

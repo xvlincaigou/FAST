@@ -13,7 +13,7 @@ const Timeline = () => {
       title: '项目构想',
       shortDesc: '南仁东提出建设中国大型射电望远镜的构想',
       fullDesc: '在日本担任客座教授的南仁东毅然回国，决心建造一个属于中国的大型射电望远镜。他说："别人都有自己的大设备，我们没有，我挺想试一试。"',
-      image: '/hero-fast-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/hero-fast-cosmic.png`,
       category: '构想',
       significance: '这一构想为中国天文学的发展指明了方向',
       achievements: [
@@ -29,7 +29,7 @@ const Timeline = () => {
       title: '立项启动',
       shortDesc: 'FAST项目正式立项，开始可行性研究',
       fullDesc: '经过7年的前期研究，FAST项目获得国家批准，正式开始立项建设。这一阶段主要完成了选址、技术方案论证等关键工作。',
-      image: '/fast-technical-diagram.png',
+      image: `${process.env.PUBLIC_URL}/fast-technical-diagram.png`,
       category: '立项',
       significance: '标志着中国大科学工程建设进入新阶段',
       achievements: [
@@ -45,7 +45,7 @@ const Timeline = () => {
       title: '开工建设',
       shortDesc: 'FAST在贵州平塘正式开工建设',
       fullDesc: '2011年3月，FAST工程在贵州省平塘县大窝凼洼地正式开工建设。这是一个历史性的时刻，标志着FAST从概念设计转向工程实施。',
-      image: '/milky-way-panorama.png',
+      image: `${process.env.PUBLIC_URL}/milky-way-panorama.png`,
       category: '建设',
       significance: '从概念设计转向工程实施的重要里程碑',
       achievements: [
@@ -61,7 +61,7 @@ const Timeline = () => {
       title: '落成启用',
       shortDesc: 'FAST正式落成启用，习近平总书记发来贺信',
       fullDesc: '2016年9月25日，FAST正式落成启用，成为世界上最大的单口径射电望远镜。习近平总书记发来贺信，强调FAST对我国在科学前沿实现重大原创突破的重要意义。',
-      image: '/pulsars-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/pulsars-cosmic.png`,
       category: '落成',
       significance: '中国在天文大科学装置领域实现重大突破',
       achievements: [
@@ -77,7 +77,7 @@ const Timeline = () => {
       title: '首次发现',
       shortDesc: 'FAST发现首批脉冲星，实现零的突破',
       fullDesc: '2017年10月，FAST宣布发现2颗新脉冲星，距离地球分别约4100光年和1.6万光年。这是中国射电望远镜首次发现脉冲星，具有重要的里程碑意义。',
-      image: '/frb-burst-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/frb-burst-cosmic.png`,
       category: '发现',
       significance: '中国射电望远镜首次发现脉冲星，具有重要的里程碑意义',
       achievements: [
@@ -93,7 +93,7 @@ const Timeline = () => {
       title: '通过国家验收',
       shortDesc: 'FAST顺利通过国家验收，正式开放运行',
       fullDesc: '2020年1月11日，FAST通过国家验收，各项指标达到或超过设计要求。这标志着FAST进入正式运行阶段，开始为科学界提供服务。',
-      image: '/fast-discoveries-timeline.png',
+      image: `${process.env.PUBLIC_URL}/fast-discoveries-timeline.png`,
       category: '验收',
       significance: '标志着FAST进入正式运行阶段',
       achievements: [
@@ -109,7 +109,7 @@ const Timeline = () => {
       title: '全球开放',
       shortDesc: 'FAST向全球科学界开放，促进国际合作',
       fullDesc: '2021年3月31日，FAST正式向全球科学家开放观测申请。这体现了中国科学家的开放合作精神，为全球天文学研究提供了重要平台。',
-      image: '/hero-fast-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/hero-fast-cosmic.png`,
       category: '开放',
       significance: '体现了中国科学家的开放合作精神',
       achievements: [
@@ -125,7 +125,7 @@ const Timeline = () => {
       title: '成果丰硕',
       shortDesc: 'FAST取得系列重大科学发现',
       fullDesc: '截至2023年，FAST已发现超过1000颗脉冲星，在快速射电暴、中性氢巡天等领域取得重大突破，进入成果爆发期。',
-      image: '/pulsars-cosmic.png',
+      image: `${process.env.PUBLIC_URL}/pulsars-cosmic.png`,
       category: '成果',
       significance: 'FAST进入成果爆发期，为人类认识宇宙作出重要贡献',
       achievements: [

@@ -155,22 +155,22 @@ const Technology = () => {
     {
       title: '1. 信号接收',
       description: '来自宇宙深处的射电信号到达FAST反射面',
-      image: '/fast-technical-diagram.png'
+      image: `${process.env.PUBLIC_URL}/fast-technical-diagram.png`
     },
     {
       title: '2. 信号聚焦',
       description: '500米反射面将微弱信号聚焦到馈源舱',
-      image: '/fast-technical-diagram.png'
+      image: `${process.env.PUBLIC_URL}/fast-technical-diagram.png`
     },
     {
       title: '3. 信号处理',
       description: '馈源舱接收信号并进行初步处理',
-      image: '/fast-technical-diagram.png'
+      image: `${process.env.PUBLIC_URL}/fast-technical-diagram.png`
     },
     {
       title: '4. 数据分析',
       description: '地面系统对信号进行深入分析和处理',
-      image: '/fast-technical-diagram.png'
+      image: `${process.env.PUBLIC_URL}/fast-technical-diagram.png`
     }
   ];
 
@@ -223,7 +223,7 @@ const Technology = () => {
 
             <div className="structure-showcase">
               <div className="structure-image">
-                <img src="/fast-technical-diagram.png" alt="FAST结构示意图" />
+                <img src={`${process.env.PUBLIC_URL}/fast-technical-diagram.png`} alt="FAST结构示意图" />
               </div>
               
               <div className="structure-details">
